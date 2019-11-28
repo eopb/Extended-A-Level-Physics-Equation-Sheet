@@ -8,9 +8,9 @@ stages:
   - check
   - deploy
 
-check:
+lint:
   image: node:latest
-  stage: lint
+  stage: check
   script:
     - npm ci
     - npm run lint
